@@ -1,0 +1,132 @@
+@media screen and (max-width: 800px) {
+
+    .big-font{
+        font-size: 1.8em;
+    }
+
+    .navbar-desktop{
+        margin:  0;
+        height: 100px;
+        padding: 10px 20px;
+        display: flex;
+        background-color: #070409;
+    }
+
+    .navbar-desktop--links{
+        margin: 0;
+        margin-top: 2em;
+        height: 20px;
+        background-color: green;
+    }
+
+    .navbar-desktop--left, .navbar-desktop--right{
+        visibility: hidden;
+    }
+
+    .logo{  
+        visibility: visible;
+        display: flex;
+        z-index: 2;
+    }
+
+    #btnOpenMenu{
+        visibility: visible;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding: 1em 2em;
+    }
+
+    .btnCentral{
+        width: 100% !important;
+        height: 60px;
+    }
+
+    /* ### formulários Criar Conta ### */
+    #sectionCriarLogin{
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: scroll;
+    }
+
+    #sectionCriaLogin .wrapper{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+
+    #campFields{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 3px;
+        top: 0;
+        bottom: 0;
+        height: 150vh !important;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    fieldset:first-child{
+        position: relative;
+        top: 3em;
+        margin: 1em 0;
+    }
+
+    .fieldsetInfo{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-top: 3em;
+        padding: 0 !important;
+    }
+
+    .fieldsetInfo h1{
+        margin-bottom: 1em;
+    }
+
+    .fieldsetInfo p{
+        font-size: 11pt;
+    }
+
+    footer ul{
+        margin: 0 .2em;
+    }
+
+    /* ### Section Login ### */
+
+    #sectionLogin{
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        max-height: 100vh;
+        transform: scale(1);
+        transition: all .2s linear;
+        overflow:hidden !important;
+        background-color: #190f27;
+    }
+
+    #sectionLogin #campFields{
+        position: absolute;
+        top: -10em;
+        padding: 0;
+        overflow:hidden !important;
+    }
+
+    #sectionLogin .saudacoes{
+        margin: 0 0 3em 0;
+    }
+    
+}
+  

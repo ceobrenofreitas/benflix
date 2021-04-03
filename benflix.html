@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BenFlix</title>
+    <link rel="stylesheet" href="./src/css/bf-main.css">
+    <link rel="stylesheet" href="./src/css/bf-main.css">
+    <link rel="stylesheet" href="./src/css/bf-sections.css">
+    <link rel="stylesheet" href="./src/css/bg-main-mobile.css">
+</head>
+
+<body>
+    <section id="sectionHome01" class="section-full centralized">
+
+
+        <nav id="navbar" class="navbar-desktop">
+            <div class="navbar-desktop--links navbar-desktop--left centralized">
+                <a href="#" class="logo">BenFlix</a>
+                <ul class="links">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="navbar-desktop--links navbar-desktop--right centralized">
+                <ul>
+                    <li><button id="btnCriarConta" class="disabled" onclick="abrirCriarLogin()">Criar uma conta</button></li>
+                    <li><button id="btnEntrar" class="cor-quatro" onclick="abrirFormEntrar()">Entrar</button></li>
+                    <li><i id="btnOpenMenu" class="bi bi-list" onclick="abrirFormEntrar()"></i></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="wrapper wrapper-center">
+            <h1 class="big-font">
+                Assista os filmes favoritos
+                de Breno aqui na BenFlix.
+            </h1>
+            <h5>
+                Esse é um projeto criado por Breno Freitas
+                baseado nas aulas da Alura - Imersão DEV 2021.
+            </h5>
+            <button id="btnCriarConta" class="btn-big btnCentral cor-quatro" onclick="abrirCriarLogin()">Primeira vez por aqui? Crie sua conta!</button>
+        </div>
+    </section>
+
+    <section id="sectionCriaLogin" class="section-full centralized col">
+        <div id="campFields" class="wrapper centralized row">
+            <fieldset>
+                <h1 id="btnFecharCriarConta" onclick="fecharCriarLogin()"><i class="bi bi-x-circle-fill"></i></h1>
+
+                <h1>Crie sua conta</h1>
+
+
+                <p>Nome de usuário</p>
+                <li class="row">
+                    <i class="bi bi-person"></i>
+                    <input type="text" name="" id="#" placeholder="">
+                </li>
+
+                <p>Digite seu e-mail</p>
+                <li class="row">
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" name="" id="#" placeholder="">
+                </li>
+
+                <p>Digite sua senha</p>
+                <li class="row">
+                    <i class="bi bi-key"></i>
+                    <input type="password" name="" id="#" placeholder="">
+                </li>
+
+                <p>Repita sua senha</p>
+                <li class="row">
+                    <i class="bi bi-key"></i>
+                    <input type="password" name="" id="#" placeholder="">
+                </li>
+
+                <ul class="col">
+                    <li><button id="btnCriarContaNova" class="btnForm">Criar a conta</button></li>
+                    <li><button id="btnEntrar" class="btnForm btnForm2 disabled" onclick="abrirFormEntrar()">Já tenho uma conta</button></li>
+                </ul>
+
+            </fieldset>
+
+            <fieldset class="fieldsetInfo">
+                <h1>
+                    Para que serve uma conta?
+                </h1>
+                <p>- Crie listas de Filmes e Séries</p>
+                <p>- Tenha acesso ao melhor Aplicativo</p>
+                <p>- Receba notificações de novos filmes e atualizações de séries.</p>
+                <p>- Compartilhe a sua opinião sobre filmes e séries com outros usuários</p>
+                <p></p>
+            </fieldset>
+        </div>
+    </section>
+
+    <section id="sectionLogin" class="section-full centralized col">
+        <div id="campFields" class=" centralized col">
+            <p class="saudacoes"><b>Olá, quem bom ver você por aqui!</b></p>
+            <fieldset>
+                <h1 id="btnFecharCriarConta" onclick="fecharFormEntrar()">
+                    <i class="bi bi-x-circle-fill"></i>
+                </h1>
+
+                <h1>Entrar</h1>
+
+                <p>Nome de usuário</p>
+                <li class="row">
+                    <i class="bi bi-person"></i>
+                    <input type="text" name="" id="#" placeholder="">
+                </li>
+
+                <p>Digite sua senha</p>
+                <li class="row">
+                    <i class="bi bi-key"></i>
+                    <input type="password" name="" id="#" placeholder="">
+                </li>
+
+                <ul class="col">
+                    <li><button id="btnCriarContaNova" class="btnForm">Entrar</button></li>
+                    <li><button id="btnEntrar" class="btnForm btnForm2 disabled" onclick="fecharFormEntrar()" onclick="abrirCriarLogin()">Criar uma conta</button></li>
+                </ul>
+
+            </fieldset>
+        </div>
+    </section>
+
+    <footer class="cor-um">
+        <ul>
+            <li class="row">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-layout-text-window-reverse"></i></a>
+                <a href="#"><i class="bi bi-discord"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+            </li>
+
+            <div class="row">
+                <h1>BenFlix</h1>
+                <p style="margin-top: 21px; margin-left: 5px;">.inc</p>
+            </div>
+
+            <li class="col">
+                <a href="#">Conheça o projeto</a>
+                <a href="#">Empresa</a>
+                <a href="#">Desenvolvedores</a>
+                <a href="#">Jobs</a>
+                <a href="#">Termos de uso e privacidade</a>
+            </li>
+
+            <li class="paragrafos">
+                <p>Última atualização: 31 de Março de 2021</p>
+                <p>© COPYRIGHT TODOS OS DIREITOS RESERVADOS A BENFLIX EM PARCERIA COM A TEDRAVAL .inc</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./src/js/windowControls.js"></script>
+</body>
+
+</html>
