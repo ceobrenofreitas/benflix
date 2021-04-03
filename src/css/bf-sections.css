@@ -1,0 +1,137 @@
+#sectionHome01{
+    background-image: url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    box-shadow: 0px 500px 10px 300px rgba(16, 11, 31, 0.823) inset;
+    -webkit-box-shadow: 0px 3px 100% 100% rgb(0, 0, 0) inset;
+    -moz-box-shadow: 0px 3px 100% 100% rgb(235, 35, 35) inset;
+}
+
+.btnCentral{
+    margin: 0 !important;
+}
+
+#sectionCriaLogin{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    min-height: 100% !important;
+    z-index: -2;
+    transform: scale(-1);
+    transition: all 2s ease-in-out;
+    overflow:scroll;
+    background-color: #190f27;
+}
+
+#sectionCriaLogin .wrapper{
+    width: 100%;
+    padding: 2em 5em;
+    justify-content: center;
+}
+
+fieldset{
+    width: 250px !important;
+    max-width: 300px !important;
+    margin: 0 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: #2a2546;
+}
+
+#btnFecharCriarConta{
+    position: absolute;
+    display: flex;
+    margin-top: -33px;
+    margin-left: 215px;
+}
+
+fieldset h1{
+    margin-bottom: .5em;
+}
+
+fieldset p{
+    margin: 3px 0;
+    font-size: 10pt;
+}
+
+fieldset li:last-child{
+    margin: 0;
+}
+
+fieldset ul{
+    margin: 0;
+    padding: 0;
+}
+
+fieldset i{
+    position: absolute;
+    padding: 3px 15px 0 6px ;
+    color: #ffffff;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    padding: 3px 10px;
+    padding-left: 28px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 8pt;
+    font-weight: 600;
+    color: #686585;
+    background-color: #1e1b2e;
+    transition: all .2s ease;
+}
+
+input:focus-visible{
+    background-color: #645da5;
+    font-size: 10pt;
+    color: #fefefe;
+    font-weight: 400;
+    transition: all .2s ease;
+}
+
+.btnForm{
+    margin: 10px 0 !important;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+
+.btnForm2{
+    margin: 0px 0 !important;
+}
+
+.fieldsetInfo{
+    background-color: transparent;
+    padding: 0;
+    width: 300px;
+}
+
+.fieldsetInfo h1{
+    margin-bottom: 1em;
+}
+
+.fieldsetInfo p{
+    margin: 15px 0;
+    font-size: 10pt;
+}
+
+/* ### Section Login ### */
+
+#sectionLogin{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    min-height: 100% !important;
+    z-index: -2; /* posicao */
+    transform: scale(0);
+    overflow: auto !important;
+    background-color: #190f27;
+}
+
+#sectionLogin .saudacoes{
+    margin: 0 0 3em 0;
+}
